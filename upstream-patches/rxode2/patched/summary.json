@@ -1,0 +1,55 @@
+{
+  "schema": "qspquest.validation.rxode2-history/v1",
+  "rxode2_version": "5.1.8",
+  "rxode2_library": "local-environment/patched-library",
+  "limit": 1e-07,
+  "cases": {
+    "bolus": {
+      "status": "match",
+      "max_absolute_error": 2.1316282072803e-14,
+      "trajectory_sha256": "b64ffcf32c8a04ad5f9c7303bd3327baf0cebaf9267fc5899006fcddfd7a778e"
+    },
+    "duration": {
+      "status": "match",
+      "max_absolute_error": 2.8421709430404e-14,
+      "trajectory_sha256": "f8f5803ddcdb392ec93d6b12552317b985a8d30e3ccf228a926ddbd6b023bc5c"
+    },
+    "rate": {
+      "status": "match",
+      "max_absolute_error": 4.2632564145606e-14,
+      "trajectory_sha256": "9f42ba0aeb309b3a6d0ca0acf4014d7af0f6870190536d7b2d6dae08952df3b4"
+    },
+    "bioavailability": {
+      "status": "match",
+      "max_absolute_error": 2.8421709430404e-14,
+      "trajectory_sha256": "8dd004056274aff7866fddcef2cd692d9f493ef464513904782c663c34fc64a0"
+    },
+    "unequal_repeat": {
+      "status": "match",
+      "max_absolute_error": 5.6843418860808e-14,
+      "trajectory_sha256": "a2ce6c31432d5bb89793f2adfc7d1600e20254dc2ecde16bfd79677795708cf0"
+    },
+    "overlap": {
+      "status": "match",
+      "max_absolute_error": 5.6843418860808e-14,
+      "trajectory_sha256": "2cbcf01c06ea9b151b8c911512639a700a3b3e583cd4125735d4464b681dde22"
+    },
+    "compartments": {
+      "status": "match",
+      "max_absolute_error": 1.13686837721616e-13,
+      "trajectory_sha256": "01aad34c008cc4e6fabff8fc54725ecedb59b8e25cb0fc56441119cca3b9ec78"
+    },
+    "subjects": {
+      "status": "match",
+      "max_absolute_error": 1.4210854715202e-13,
+      "trajectory_sha256": "3ce8fe10274d81f4b0233f03f1513f63e7cac9a3dad0c23183447479b6d12fac"
+    },
+    "no_dose": {
+      "status": "match",
+      "max_absolute_error": 0,
+      "trajectory_sha256": "b6830277e030555f12cba1c9d87c891a37d3a5ee99368c1d9f80f1e4000b8adb"
+    }
+  },
+  "reference_execution": "Retained analytic reference results; no new reference-engine execution.",
+  "retained_receipt_sha256": "6c25b5861a344f260d976b215bb6a9fdb19fceaab61dbab2b4e16eb744a0d008"
+}

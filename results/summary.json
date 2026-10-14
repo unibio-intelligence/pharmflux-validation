@@ -1,0 +1,298 @@
+{
+  "schema": "qspquest.validation.summary/v3",
+  "engine": {
+    "backend": "diffsol",
+    "backend_version": "0.17.1+sha256:57608fe049e137061e6ba7c2d9bce15ba3d36b8d69d6e1d6494dff437a68fff1",
+    "compiler_source_sha256": "sha256:34354d12c5c962cca95fab09ceb5c1084100f2b87e41f89269868ad5942b97ec",
+    "compiler_version": "qspquest/0.1.0",
+    "rustc_version": "rustc 1.98.1 (48a229cea 2026-09-01) (Homebrew)",
+    "target": "aarch64-apple-darwin"
+  },
+  "cli_sha256": "54af1f76c137f123db0212b6556b216e312ad8dc1f7c8783bcfb6e6aef53adbc",
+  "reference_execution": "Retained reference trajectories and fit estimates; native executions are fresh. Reference versions identify the retained records, not newly run reference processes.",
+  "simulation_results": {
+    "omex_models": 8,
+    "omex_scenarios_per_solver": 47,
+    "omex_rxode2_matches": {
+      "bdf": 47,
+      "rodas5p": 47
+    },
+    "additional_source_presets": 597,
+    "additional_source_matches": 597,
+    "other_engines": [
+      {
+        "engine": "mrgsolve",
+        "models": 8,
+        "scenarios": 47,
+        "matched": 47,
+        "native_solvers": [
+          "diffsol_bdf",
+          "diffsol_rodas5p"
+        ]
+      },
+      {
+        "engine": "ordinarydiffeq",
+        "models": 8,
+        "scenarios": 47,
+        "matched": 47,
+        "native_solvers": [
+          "diffsol_bdf",
+          "diffsol_rodas5p"
+        ]
+      },
+      {
+        "engine": "roadrunner",
+        "models": 8,
+        "scenarios": 47,
+        "matched": 47,
+        "native_solvers": [
+          "diffsol_bdf",
+          "diffsol_rodas5p"
+        ]
+      },
+      {
+        "engine": "copasi",
+        "models": 8,
+        "scenarios": 47,
+        "matched": 47,
+        "native_solvers": [
+          "diffsol_bdf",
+          "diffsol_rodas5p"
+        ]
+      },
+      {
+        "engine": "amici",
+        "models": 8,
+        "scenarios": 47,
+        "matched": 47,
+        "native_solvers": [
+          "diffsol_bdf",
+          "diffsol_rodas5p"
+        ]
+      }
+    ],
+    "nlmixr2lib_models": 59,
+    "nlmixr2lib_conditions_per_solver": 420,
+    "conditions": {
+      "nlmixr2-conditions-bdf": {
+        "match": 403,
+        "mismatch": 1,
+        "expected_rejection": 16
+      },
+      "nlmixr2-conditions-rodas5p": {
+        "match": 403,
+        "mismatch": 1,
+        "expected_rejection": 16
+      },
+      "nlmixr2-conditions-patched-rxode2-bdf": {
+        "match": 404,
+        "expected_rejection": 16
+      },
+      "nlmixr2-conditions-patched-rxode2-rodas5p": {
+        "match": 404,
+        "expected_rejection": 16
+      }
+    }
+  },
+  "fitting_results": {
+    "contracts": 1906,
+    "solver_runs": 3812,
+    "datasets": [
+      "Bolus_1CPT",
+      "Bolus_1CPTMM",
+      "Bolus_2CPT",
+      "Bolus_2CPTMM",
+      "Infusion_1CPT",
+      "Infusion_1CPTMM",
+      "Infusion_2CPT",
+      "Infusion_2CPTMM",
+      "Oral_1CPT",
+      "Oral_1CPTMM",
+      "Oral_2CPT",
+      "Oral_2CPTMM",
+      "Wang2007",
+      "mavoglurant",
+      "neonatal_wt",
+      "nimoData",
+      "pheno_sd",
+      "theo_md",
+      "theo_sd",
+      "warfarin",
+      "wbcSim"
+    ],
+    "counts": {
+      "matched_converged": 3812
+    },
+    "by_dataset": {
+      "Bolus_1CPT": {
+        "diffsol_bdf": {
+          "matched_converged": 120
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 120
+        }
+      },
+      "Bolus_1CPTMM": {
+        "diffsol_bdf": {
+          "matched_converged": 120
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 120
+        }
+      },
+      "Bolus_2CPT": {
+        "diffsol_bdf": {
+          "matched_converged": 120
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 120
+        }
+      },
+      "Bolus_2CPTMM": {
+        "diffsol_bdf": {
+          "matched_converged": 120
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 120
+        }
+      },
+      "Infusion_1CPT": {
+        "diffsol_bdf": {
+          "matched_converged": 120
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 120
+        }
+      },
+      "Infusion_1CPTMM": {
+        "diffsol_bdf": {
+          "matched_converged": 120
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 120
+        }
+      },
+      "Infusion_2CPT": {
+        "diffsol_bdf": {
+          "matched_converged": 120
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 120
+        }
+      },
+      "Infusion_2CPTMM": {
+        "diffsol_bdf": {
+          "matched_converged": 120
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 120
+        }
+      },
+      "Oral_1CPT": {
+        "diffsol_bdf": {
+          "matched_converged": 120
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 120
+        }
+      },
+      "Oral_1CPTMM": {
+        "diffsol_bdf": {
+          "matched_converged": 120
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 120
+        }
+      },
+      "Oral_2CPT": {
+        "diffsol_bdf": {
+          "matched_converged": 120
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 120
+        }
+      },
+      "Oral_2CPTMM": {
+        "diffsol_bdf": {
+          "matched_converged": 120
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 120
+        }
+      },
+      "Wang2007": {
+        "diffsol_bdf": {
+          "matched_converged": 10
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 10
+        }
+      },
+      "mavoglurant": {
+        "diffsol_bdf": {
+          "matched_converged": 120
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 120
+        }
+      },
+      "neonatal_wt": {
+        "diffsol_bdf": {
+          "matched_converged": 189
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 189
+        }
+      },
+      "nimoData": {
+        "diffsol_bdf": {
+          "matched_converged": 12
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 12
+        }
+      },
+      "pheno_sd": {
+        "diffsol_bdf": {
+          "matched_converged": 35
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 35
+        }
+      },
+      "theo_md": {
+        "diffsol_bdf": {
+          "matched_converged": 12
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 12
+        }
+      },
+      "theo_sd": {
+        "diffsol_bdf": {
+          "matched_converged": 12
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 12
+        }
+      },
+      "warfarin": {
+        "diffsol_bdf": {
+          "matched_converged": 32
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 32
+        }
+      },
+      "wbcSim": {
+        "diffsol_bdf": {
+          "matched_converged": 44
+        },
+        "diffsol_rodas5p": {
+          "matched_converged": 44
+        }
+      }
+    }
+  },
+  "scope": "Deterministic simulations and bounded individual fitting for the listed contracts. No biological validity, statistical calibration, population-fitting equivalence, or later-engine qualification."
+}

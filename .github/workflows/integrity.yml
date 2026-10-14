@@ -1,0 +1,38 @@
+name: Validation evidence checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: integrity-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  integrity:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Check immutable workflow actions
+        run: |
+          python3 - <<'PYCHECK'
+          import re
+          from pathlib import Path
+          root = Path.cwd()
+          paths = (root / '.github/workflows').glob('*.yml')
+          assert list((root / '.github/workflows').glob('*.yml')), 'Missing workflows'
+          for path in paths:
+              for line in path.read_text().splitlines():
+                  match = re.match(r"\s*(?:-\s*)?uses:\s*(\S+)", line)
+                  if match:
+                      assert re.fullmatch(r"[^@]+@[0-9a-f]{40}", match[1]), (path, line)
+          PYCHECK
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.11'
+      - name: Verify committed content
+        run: |
+          python -B scripts/verify.py
+          python -B -m unittest discover -s scripts -p 'test_*.py'

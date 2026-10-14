@@ -1,0 +1,55 @@
+{
+  "schema": "qspquest.validation.rxode2-history/v1",
+  "rxode2_version": "5.1.8",
+  "rxode2_library": "local-environment/library",
+  "limit": 1e-07,
+  "cases": {
+    "bolus": {
+      "status": "match",
+      "max_absolute_error": 2.1316282072803e-14,
+      "trajectory_sha256": "b64ffcf32c8a04ad5f9c7303bd3327baf0cebaf9267fc5899006fcddfd7a778e"
+    },
+    "duration": {
+      "status": "mismatch",
+      "max_absolute_error": 53.3333333333333,
+      "trajectory_sha256": "cc7e99be4e013f0da6e9fad4d61f8de75cfb30f13a8819036c880fd76afd4a2e"
+    },
+    "rate": {
+      "status": "mismatch",
+      "max_absolute_error": 64,
+      "trajectory_sha256": "95bdc12c2959013bca1bddbe68df336b810c66cf8d7c25fb4f8ee5757073869e"
+    },
+    "bioavailability": {
+      "status": "mismatch",
+      "max_absolute_error": 53.3333333333333,
+      "trajectory_sha256": "ec28ebdecc1c3d163a87710e44ad5a52a0dd9fb7c1e812dc45081ec60661d2f3"
+    },
+    "unequal_repeat": {
+      "status": "mismatch",
+      "max_absolute_error": 63.3333333333334,
+      "trajectory_sha256": "4824163fcdf5bfcd933c3b163695025430ec78400b8110b0b1dec7d086e98410"
+    },
+    "overlap": {
+      "status": "mismatch",
+      "max_absolute_error": 104.666666666667,
+      "trajectory_sha256": "3ff3908e967fceaf4cee22a66cb88e8774b1f617b7ff3e8802ba24b54a4adcff"
+    },
+    "compartments": {
+      "status": "mismatch",
+      "max_absolute_error": 98,
+      "trajectory_sha256": "52f85bf04f418ef10309d98530ce77ccca8d89a8c13461f8100697dcecc76240"
+    },
+    "subjects": {
+      "status": "mismatch",
+      "max_absolute_error": 120,
+      "trajectory_sha256": "7274bcfbffcd2221f5ad66d0fec61632d3a9b7d584d8744f93e21a11b67dd3d8"
+    },
+    "no_dose": {
+      "status": "match",
+      "max_absolute_error": 0,
+      "trajectory_sha256": "b6830277e030555f12cba1c9d87c891a37d3a5ee99368c1d9f80f1e4000b8adb"
+    }
+  },
+  "reference_execution": "Retained analytic reference results; no new reference-engine execution.",
+  "retained_receipt_sha256": "6cf395fddafff36c717231e0fe4ca7a0b365767fb6cb3cea2cd399c5ef7e2bfc"
+}

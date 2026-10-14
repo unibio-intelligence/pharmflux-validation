@@ -1,0 +1,17 @@
+Copyright 2026 UniBio Intelligence.
+
+New Ubi-authored comparison-repository contributions: GPL-3.0-only.
+The distributed comparison work is offered under GNU GPL version 3, subject to
+retention of the original notices for incorporated components and snapshots.
+
+nlmixr2lib 0.3.2 declares GPL (>= 2), permitting version 3. Its source-derived
+model adaptations retain upstream copyright and authorship; see
+nlmixr2lib-0.3.2/DESCRIPTION and THIRD_PARTY_NOTICES.md.
+
+Historical Ubi-owned snapshots retain their original license records as evidence.
+Ubi additionally permits its own contributions in those snapshots to be used
+under GPL-3.0-only for this comparison repository. This additional permission
+applies only to Ubi-owned contributions, never to third-party works.
+Apache-2.0 and BSD-3-Clause notices on incorporated material remain intact.
+Scientific source publications retain their own licenses and attribution.
+No blanket GPL relicensing of third-party material is asserted.

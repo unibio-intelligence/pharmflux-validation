@@ -1,0 +1,30 @@
+--- a/inst/include/rxode2parseHandleEvid.h
++++ b/inst/include/rxode2parseHandleEvid.h
+@@ -1492,10 +1492,9 @@
+       // duration remains constant.  rate = amt/dur
+       ind->on[cmt] = 1;
+       tmp = getDoseIndex(ind, ind->idx);
+-      if (tmp > 0) {
+-        ind->curDose = tmp;
+-        ind->curDoseS[cmt] = ind->curDose;
+-      }
++      // handleTlastInline records the raw administered amount. tmp is an
++      // internal infusion rate; overwriting history here makes podo() differ
++      // between ODE evaluation and the reported readout.
+       tmp = getAmt(ind, id, cmt, tmp, xout, yp);
+       {
+         double *_esDydtPreB = _esInfusionDydtPre(id, xout, yp, neq);
+@@ -1535,10 +1534,9 @@
+       // rate remains constant.  rate = amt/dur
+       ind->on[cmt] = 1;
+       tmp = getDoseIndex(ind, ind->idx);
+-      if (tmp > 0) {
+-        ind->curDose = tmp;
+-        ind->curDoseS[cmt] = ind->curDose;
+-      }
++      // handleTlastInline records the raw administered amount. tmp is an
++      // internal infusion rate; overwriting history here makes podo() differ
++      // between ODE evaluation and the reported readout.
+       // if (!ind->doSS) {
+       //   REprintf("infusion dose[cmt:%d] at %f is %f ind->ixds: %d\n",
+       //            cmt, xout, tmp, ind->ixds);

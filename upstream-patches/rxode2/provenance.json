@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/nlmixr2/rxode2",
+  "commit": "2f421fb1341a2b8954a7f86cf6aceb3938a28bef",
+  "version": "5.1.8",
+  "source_tar_sha256": "d3e0aa9dc9c234742c7379470ed7dc862d4904ce21d60b693398022fb561d48c",
+  "original_header_sha256": "21a58eae4aa4788f7bac831a372da608c9875cb21e69628a1d617b6f91ff9c6b",
+  "patched_header_sha256": "28a8c63b3c1eda43d2d933a2b664981857f0ae9264a0af204e5a3d97fc1f7e69",
+  "publication_status": "tested_local_patch_not_submitted_upstream"
+}
