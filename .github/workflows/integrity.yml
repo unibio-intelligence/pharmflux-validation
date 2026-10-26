@@ -2,13 +2,13 @@ name: Validation evidence checks
 on:
   push:
     branches: [main]
-  pull_request:
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: integrity-${{ github.ref }}
-  cancel-in-progress: true
+  group: ci-integrity-${{ github.event_name == 'push' && github.ref || format('qualification-{0}', github.run_id) }}
+  cancel-in-progress: ${{ github.event_name == 'push' }}
+
 jobs:
   integrity:
     runs-on: ubuntu-24.04
