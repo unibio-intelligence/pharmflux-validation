@@ -53,12 +53,10 @@ native agreement is assessed separately. The
 [findings](UPSTREAM_ISSUES.md) preserve the original outcomes and the
 [patch notes](upstream-patches/rxode2/README.md) describe reproduction.
 
-## Scope and provenance
+## Scope
 
-[Environment records](environment.json) identify the executed QSPQuest build and
-the reference versions. Native results are freshly executed for that build;
-retained reference trajectories are identified separately. Replaying one case
-does not extend these comparisons to another engine build.
+[Environment](environment.json) identifies the tested engine and reference
+versions. These comparisons apply to that build and the stated inputs.
 
 The COMBINE/OMEX archives are test fixtures. Native fitting and JSON model profiles
 are identified explicitly. To find and use models, visit the companion

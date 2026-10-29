@@ -8,7 +8,7 @@ packages or reference-engine installation are needed for this preset replay.
 Run these commands from the validation repository root. If you need to build the
 CLI, follow the [engine installation guide](https://github.com/unibio-intelligence/qspquest/blob/main/docs/installation.md)
 first. This snapshot records QSPQuest 0.1.0 with compiler source hash
-`34354d12c5c962cca95fab09ceb5c1084100f2b87e41f89269868ad5942b97ec`.
+`c3375aa65f918b80409b332936d32d5c7faac99c508d3a1f51910dbb9857c042`.
 The engine suite file pins this exact validation manifest. Build the engine
 revision supplied with that suite to reproduce its source identity; version
 `0.1.0` alone does not identify source bytes. A later engine may also replay the

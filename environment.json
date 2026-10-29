@@ -1,13 +1,13 @@
 {
   "engine": {
     "backend": "diffsol",
-    "backend_version": "0.17.1+sha256:57608fe049e137061e6ba7c2d9bce15ba3d36b8d69d6e1d6494dff437a68fff1",
-    "compiler_source_sha256": "sha256:34354d12c5c962cca95fab09ceb5c1084100f2b87e41f89269868ad5942b97ec",
+    "backend_version": "0.18.0+sha256:36eb02e7fab3d73ba5d9bd123c99341cec9fa1aa4b15b6310e5fe9cfbdedac67",
+    "compiler_source_sha256": "sha256:c3375aa65f918b80409b332936d32d5c7faac99c508d3a1f51910dbb9857c042",
     "compiler_version": "qspquest/0.1.0",
     "rustc_version": "rustc 1.98.1 (48a229cea 2026-09-01) (Homebrew)",
     "target": "aarch64-apple-darwin"
   },
-  "cli_sha256": "54af1f76c137f123db0212b6556b216e312ad8dc1f7c8783bcfb6e6aef53adbc",
+  "cli_sha256": "99bee9fa5d093fdd47047aee19913070b90aa3cd520ccb973e57934b383726cf",
   "independent_engines": {
     "Julia": "1.12.6",
     "Julia_packages": {

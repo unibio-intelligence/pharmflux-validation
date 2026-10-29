@@ -102,9 +102,7 @@ to scalar optimization. Method-specific OFV values are not equated to normalized
 NLL. WBC, PBPK and binding references use a positive log-multiplier within the
 same physical bounds. Archived final WBC requests use the independently chosen
 best converged fit from source start, seven log-spaced starts, and a physical
-midpoint; no reference estimate supplies the native start. The original broad
-start-search history stays private; replaying the final requests tests the
-recorded fitting contract, not that exploratory search.
+midpoint; no reference estimate supplies the native start. Replaying the final requests tests the recorded fitting contract.
 
 Data exclusions remain explicit in each contract: the initial cohort excludes
 time-zero observations and linear ACOP rows at/after the time-216 reset;
@@ -113,9 +111,7 @@ rows are paired into amount/rate events. The neonatal contracts retain time zero
 
 All 3,812 native fits converged and matched the three criteria above.
 Five datasets and their concrete limits are listed in
-`REMAINING_FITTING_CONTRACTS.md`. Earlier exploratory individual/SAEM results are
-outside this current-engine report. Population fitting equivalence remains
-unestablished here.
+`REMAINING_FITTING_CONTRACTS.md`. Population fitting equivalence is outside this report.
 
 ## Failure handling and domain limits
 
@@ -130,10 +126,8 @@ exit status alone. The original reference enables safeZero, safeLog and safePow;
 finite values from these guards do not establish a solution of an undefined
 unguarded expression. Nonfinite/missing outputs and solver failures are recorded
 explicitly. Rejected requests remain outside the successful-simulation count.
-Separately corrected observation/history/window contracts and synthetic
-positive-potency variants are private supplemental evidence and are not added
-to the unchanged-source match count. These checks cover the recorded negative
-conditions, rather than all possible invalid inputs.
+These checks cover the recorded negative conditions; they do not cover all
+possible invalid inputs.
 
 ## Reference methods and environments
 
